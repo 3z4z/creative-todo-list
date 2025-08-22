@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Mulish-bold";
+  src: url(../src/fonts/Mulish-Bold.woff2);
+}
+@font-face {
+  font-family: "Mulish-semibold";
+  src: url(../src/fonts/Mulish-Semibold.woff2);
+}
+@font-face {
+  font-family: "Mulish-regular";
+  src: url(../src/fonts/Mulish-Regular.woff2);
+}
+
+* {
+  font-family: "Mulish-regular";
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: ease 0.15s;
+}
+h1,
+h2,
+h3 {
+  font-family: "Mulish-bold";
+  font-weight: 700;
+}
+
+h4,
+h5,
+h6,
+button {
+  font-family: "Mulish-semibold";
+  font-weight: 500;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.input-group {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.input-group > * {
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-group input {
+  width: 100%;
+  margin-right: 0.25rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.input-group input:focus {
+  background-color: #fafafa;
+}
+
+.input-group button {
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.input-group button:hover {
+  background-color: #eee;
+}
+
+.input-group button:active {
+  background-color: #ccc;
+}
+
+#todo-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 12px;
+  gap: 16px 12px;
+}
+
+.todo-item {
+  width: 363px;
+  padding: 0.75rem 1.5rem 1.5rem;
+  position: relative;
+  background-color: #fff;
+}
+
+.todo-item.done {
+  background-color: #f3fff3;
+}
+
+.todo-item h4 {
+  width: max-content;
+  position: relative;
+  font-size: 1.175rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.todo-item h4 span {
+  position: absolute;
+  right: -30px;
+}
+.todo-item h4 span img {
+  width: 24px;
+}
+
+.todo-item p {
+  font-size: 0.925rem;
+}
+
+.todo-item .actions {
+  text-align: right;
+}
+
+.todo-item .actions button {
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  background: white;
+  cursor: pointer;
+}
+
+.actions button.done-btn {
+  color: #007000;
+  border: 1px solid #00700049;
+}
+
+.actions button.delete-btn {
+  color: #dd0000;
+  border: 1px solid #dd000049;
+}
+
+.actions button.delete-btn.hidden {
+  display: none;
+}
+
+button.done-btn:hover {
+  background: #00700011;
+}
+
+button.delete-btn:hover {
+  background: #dd000011;
+}
+
+button.done-btn:active {
+  background: #00700033;
+}
+
+button.delete-btn:active {
+  background: #dd000033;
+}
